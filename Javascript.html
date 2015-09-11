@@ -2,18 +2,39 @@
 <html>
 <head>
 <title>Javascript</title>
-<style>h1{font-family: sans-serif;}
-body{font-size: 2em;}</style>
+<style>
+
+*{font-family: sans-serif;}
+body{font-size: 2em; margin: 0px;}
+.secondBlock {height: 300px; width: 100%; background-color: #d3d3d3;margin-top: 0px;}
+.subheader {width: 100%;height: 200px;background-color: lightblue; margin: 0px;}
+h1 {margin: 0px;}
+</style>
 </head>
-	<body>
+
+<body>
+		<header>
 		<h1>Javascript</h1>
-		<script type="text/javascript">
+<div class="subheader"><p>This is the first section<br>this is the first script: </p>
+
+		<script>
 			var num1 = 5;
 			var num2 = 3;
-			var total = num1++;
+			var total = num1 + num2;
 			document.write(total);
 
 		</script>
+</div>
+		</header>
+<!--End Header-->
+		<div class="secondBlock">
+		<p1>secondBlock</p>
+			<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+		</div>
 
 	</body>
 </head>
